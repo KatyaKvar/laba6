@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-body">
+      <header class="header">
+        <div class="header__left-block">
+          <img
+            src="./img/Ashley Babbitt Serif and Monogram Logo _ by Treadaway Co_ Design.jpg"
+            alt=" logo"
+            class="header__left-block__photo"
+          />
+        </div>
+        <div class="header__right-block">
+          <a href="">Об организации</a>
+          <a href="">Наши клиенты</a>
+          <a href="">Регистрация</a>
+        </div>
+      </header>
+      <div class="main-body__container">
+        <form class="main-body__container__forms" id="form">
+          <label for="title">
+            Название цеха
+            <input type="text" id="title" name="title" />
+          </label>
+
+          <label for="Email">
+            Эл. почта начальника цеха
+            <input type="email" id="Email" name="Email" />
+          </label>
+
+          <label for="sortOfProduction">
+            Вид продукции
+            <input type="text" name="sortOfProduction" id="sortOfProduction" />
+          </label>
+
+          <label for="numberOfProduction">
+            Количество продукции
+            <input
+              type="number"
+              name="numberOfProduction"
+              id="numberOfProduction"
+            />
+          </label>
+        </form>
+      </div>
+
+      <div class="main-body__buttons">
+        <button id="add" onclick="addNew()">Добавить цех</button>
+
+        <button id="clearForm" onclick="clearData()">Очистить форму</button>
+
+        <button id="showAll" onclick="showAll()">Показать все</button>
+
+        <button id="showEmails" onclick="showEmails()">Вывести emails</button>
+
+        <div class="group">
+          <label for="">
+            <input
+              type="text"
+              id="newColumnName"
+              name="newColumnName"
+              placeholder="new"
+            />
+          </label>
+
+          <button id="addNewColumn" onclick="addNewColumn()">
+            Добавить новое поле
+          </button>
+        </div>
+
+        <div class="group">
+          <label for="delete" class="group__label1">
+            Выберите id цеха
+            <select id="factoryIds">
+              <option value="" selected>Выберите id цеха</option>
+            </select>
+          </label>
+          <button id="delete" onclick="deleteId()">Удалить цех</button>
+        </div>
+      </div>
+      <div id="factoryList" style="display: none">
+        <table border="1">
+          <thead>
+            <tr id="tableHeader">
+              <th>ID</th>
+              <th>Название цеха</th>
+              <th>Эл. почта начальника</th>
+              <th>Вид продукции</th>
+              <th>Количество сотрудников</th>
+            </tr>
+          </thead>
+
+          <tbody id="factoryData"></tbody>
+        </table>
+      </div>
+
+      <div id="emailList" style="display: none">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>E-mail начальника</th>
+              <th>Вид продукции</th>
+            </tr>
+          </thead>
+
+          <tbody id="emailData"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./work.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,500,500i");
+
+header {
+  width: 100vw;
+  height: 120px;
+  background-color: rgb(180, 173, 173);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway";
+  font-size: 15px;
+}
+.main-body {
+  font-family: "Raleway";
+  font-size: 15px;
+}
+.header__left-block {
+  width: 20%;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group__label1 {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.header__left-block__photo {
+  width: 50%;
+  height: 115px;
+}
+div.header__right-block {
+  width: 40%;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-body {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-body__container {
+  width: 750px;
+  height: max-content;
+  background-color: rgb(83, 81, 80);
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+.main-body__container__forms {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+.main-body__container__form label {
+  width: 50%;
+}
+input {
+  border: 1px solid black;
+  padding: 10px 20px;
+
+  margin: 5px 20px 20px 0px;
+  width: 80%;
+}
+.main-body__buttons {
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(57, 56, 55);
+  border-radius: 5px;
+  padding: 5px 5px;
+
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  width: 160px;
+  height: 25px;
+  font-family: Raleway;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: rgb(180, 173, 173);
+}
+
+.group {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 65px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+select {
+  border-radius: 5px;
+  padding: 6px 10px;
+}
+
+table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 2px 5px 2px 5px;
+}
+#factoryForm {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 5px 10px 20px;
+  background-color: rgb(137 137 237);
+  border-radius: 10px;
+}
